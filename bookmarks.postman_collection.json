@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "b9d28eb0-0f0d-4044-b3d6-fe02b48f0ee2",
+		"name": "bookmarks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "bookmarks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "bookmark_create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token bc0ee8fffd393bff90e64c709649c2cdc44b56c5",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{host}}/core/bookmarks/2",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"core",
+						"bookmarks",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bookmarks selected",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "bookmark_delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token bc0ee8fffd393bff90e64c709649c2cdc44b56c5",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/core/bookmarks/2/",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"core",
+						"bookmarks",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bookmark_partial_update",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token bc0ee8fffd393bff90e64c709649c2cdc44b56c5",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{host}}/core/bookmarks/2",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"core",
+						"bookmarks",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bookmark_update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token bc0ee8fffd393bff90e64c709649c2cdc44b56c5",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{host}}/core/bookmarks/2",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"core",
+						"bookmarks",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
