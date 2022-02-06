@@ -1,5 +1,5 @@
 """
-WSGI config for bookmark_api project.
+WSGI config for switchkey project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

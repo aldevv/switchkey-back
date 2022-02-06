@@ -1,15 +1,23 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
-from django_extensions.db.models import TimeStampedModel
 
-# Create your models here.
+from django.conf import settings
+
 
 class User(AbstractUser):
-    pass
+    email = models.CharField(max_length=30)
+    phone = models.CharField(max_length=13, null=True)
+    history = models.ManyToManyField("Product", through="BuyHistory")
 
-class Bookmark(TimeStampedModel):
-    title = models.CharField(max_length=9999)
-    url = models.URLField(verbose_name='bookmark_url')
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    public = models.BooleanField(default=True)
 
+class Product(models.Model):
+    name = models.CharField(max_length=100)
+    price = models.FloatField()
+    stock = models.IntegerField()
+    image = models.FilePathField(path=settings.LOCAL_FILE_DIR)
+
+
+class BuyHistory(models.Model):
+    user = models.ForeignKey("user", on_delete=models.CASCADE)
+    product = models.ForeignKey("product", on_delete=models.CASCADE)
+    count = models.IntegerField(default=1)
