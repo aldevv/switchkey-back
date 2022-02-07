@@ -48,15 +48,3 @@ class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
         fields = ["id", "name", "price", "image", "stock"]
-
-    def validate_image(self, image):
-        if type(image) != str:
-            return None
-
-        if type(image) == "":
-            return f"{settings.LOCAL_FILE_DIR}/placeholder.jpg"
-
-        if exists(f"{settings.LOCAL_FILE_DIR}/{image}"):
-            return f"{settings.LOCAL_FILE_DIR}/{image}"
-
-        raise serializers.ValidationError(f"file {image} does not exist")
