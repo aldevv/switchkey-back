@@ -28,6 +28,15 @@ class UserViewSet(
     def id(self, request):
         if request.user.is_authenticated:
             return Response({"user_id": request.user.id}, status=status.HTTP_200_OK)
+        return Response("Not authenticated", status=status.HTTP_200_OK)
+
+    @action(detail=False, methods=["get"])
+    def history(self, request):
+        user = request.user
+        history = BuyHistory.objects.filter(user=user.pk).all()
+        return Response(
+            BuyHistorySerializer(history, many=True).data, status=status.HTTP_200_OK
+        )
 
     @action(detail=False, methods=["post"])
     def buy(self, request):

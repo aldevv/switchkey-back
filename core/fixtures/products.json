@@ -1,1 +1,172 @@
-[{"model": "core.product", "pk": 1, "fields": {"name": "taira", "price": 650.0, "stock": 3, "image": "/home/kanon/master/projects/main/switchkey-back/media/images/taira.webp"}}, {"model": "core.product", "pk": 2, "fields": {"name": "Ultra Hacking Keyboard", "price": 299.0, "stock": 22, "image": "/home/kanon/master/projects/main/switchkey-back/media/images/keyb_uhk.jpg"}}, {"model": "core.product", "pk": 3, "fields": {"name": "Mx Brown Switches", "price": 40.0, "stock": 88, "image": "/home/kanon/master/projects/main/switchkey-back/media/images/switch_browns.png"}}, {"model": "core.product", "pk": 4, "fields": {"name": "ABS Black Keycaps", "price": 25.0, "stock": 5, "image": "/home/kanon/master/projects/main/switchkey-back/media/images/keycap_set.png"}}, {"model": "core.product", "pk": 5, "fields": {"name": "Mx Red Switches", "price": 45.0, "stock": 9, "image": "/home/kanon/master/projects/main/switchkey-back/media/images/switch_reds.png"}}, {"model": "core.product", "pk": 6, "fields": {"name": "Gamer Split Keyboard", "price": 159.0, "stock": 2, "image": "/home/kanon/master/projects/main/switchkey-back/media/images/keyb_split.jpg"}}, {"model": "core.product", "pk": 7, "fields": {"name": "Plain Office Keyboard", "price": 25.0, "stock": 42, "image": "/home/kanon/master/projects/main/switchkey-back/media/images/keyb_office.jpg"}}, {"model": "core.product", "pk": 8, "fields": {"name": "Foldable Keyboard", "price": 79.0, "stock": 2, "image": "/home/kanon/master/projects/main/switchkey-back/media/images/keyb_foldable.jpg"}}, {"model": "core.product", "pk": 9, "fields": {"name": "Gamer Keyboard", "price": 99.0, "stock": 10, "image": "/home/kanon/master/projects/main/switchkey-back/media/images/keyb_gamer.png"}}, {"model": "core.product", "pk": 10, "fields": {"name": "Gateron Yellow Switches", "price": 70.0, "stock": 5, "image": "/home/kanon/master/projects/main/switchkey-back/media/images/switch linear.png"}}, {"model": "core.product", "pk": 11, "fields": {"name": "Wood Keycaps", "price": 200.0, "stock": 4, "image": "/home/kanon/master/projects/main/switchkey-back/media/images/keycap wood.png"}}, {"model": "core.product", "pk": 12, "fields": {"name": "Meme Keycaps", "price": 20.0, "stock": 9, "image": "/home/kanon/master/projects/main/switchkey-back/media/images/keycap_serious.png"}}, {"model": "core.product", "pk": 13, "fields": {"name": "Neko Keycap", "price": 34.0, "stock": 20, "image": "/home/kanon/master/projects/main/switchkey-back/media/images/keycap_neko.png"}}, {"model": "core.product", "pk": 14, "fields": {"name": "Black ABS Keycaps", "price": 66.0, "stock": 12, "image": "/home/kanon/master/projects/main/switchkey-back/media/images/keycap_abs.png"}}, {"model": "core.product", "pk": 15, "fields": {"name": "White Gamer Keyboard", "price": 199.0, "stock": 4, "image": "/home/kanon/master/projects/main/switchkey-back/media/images/key_60.jpg"}}, {"model": "core.product", "pk": 16, "fields": {"name": "Pokemon Keycaps", "price": 89.0, "stock": 7, "image": "/home/kanon/master/projects/main/switchkey-back/media/images/keycap_pokemon.png"}}, {"model": "core.product", "pk": 17, "fields": {"name": "Mx Black Switches", "price": 79.0, "stock": 9, "image": "/home/kanon/master/projects/main/switchkey-back/media/images/switch blacks.png"}}]
+[
+    {
+        "model": "core.product",
+        "pk": 1,
+        "fields": {
+            "name": "taira",
+            "price": 650.0,
+            "stock": 3,
+            "image": "https://preview.redd.it/jcvfdcpwxe871.jpg?width=640&crop=smart&auto=webp&s=bd5f65a65b9884737813e93ce262ff830865d1c8"
+        }
+    },
+    {
+        "model": "core.product",
+        "pk": 2,
+        "fields": {
+            "name": "Ultimate Hacking Keyboard",
+            "price": 299.0,
+            "stock": 22,
+            "image": "https://www.crowdsupply.com/img/00e3/uhk-orange_jpg_content-body-gallery.jpg"
+        }
+    },
+    {
+        "model": "core.product",
+        "pk": 3,
+        "fields": {
+            "name": "Mx Brown Switches",
+            "price": 40.0,
+            "stock": 88,
+            "image": "https://cdn-reichelt.de/bilder/web/xxl_ws/E500/CHERRY_MX3A-G1N_01.png"
+        }
+    },
+    {
+        "model": "core.product",
+        "pk": 4,
+        "fields": {
+            "name": "ABS Black Keycaps",
+            "price": 25.0,
+            "stock": 5,
+            "image": "https://i.cdn.nrholding.net/63054188/550/550"
+        }
+    },
+    {
+        "model": "core.product",
+        "pk": 5,
+        "fields": {
+            "name": "Mx Red Switches",
+            "price": 45.0,
+            "stock": 9,
+            "image": "https://cdn-reichelt.de/bilder/web/artikel_ws/E500/CHERRY_MX1A-L1N_01.jpg"
+        }
+    },
+    {
+        "model": "core.product",
+        "pk": 6,
+        "fields": {
+            "name": "Gamer Split Keyboard",
+            "price": 159.0,
+            "stock": 2,
+            "image": "https://cdn.shopify.com/s/files/1/0275/1211/1184/files/Main-Hero_a1070347-00ca-43f1-b41d-e4079d4e1925_1000x.png?v=1632422371"
+        }
+    },
+    {
+        "model": "core.product",
+        "pk": 7,
+        "fields": {
+            "name": "Plain Office Keyboard",
+            "price": 25.0,
+            "stock": 42,
+            "image": "https://files.sandberg.world/products/images/lg/631-10_lg.jpg.webp"
+        }
+    },
+    {
+        "model": "core.product",
+        "pk": 8,
+        "fields": {
+            "name": "Foldable Keyboard",
+            "price": 79.0,
+            "stock": 2,
+            "image": "https://i5.walmartimages.com/asr/f0c2ccaa-e8e8-4b58-81d8-1fd1f404c5fa_1.59579ec6f9716e97c1bc42e8c0c8ba80.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
+        }
+    },
+    {
+        "model": "core.product",
+        "pk": 9,
+        "fields": {
+            "name": "Gamer Keyboard",
+            "price": 99.0,
+            "stock": 10,
+            "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6483/6483083_sd.jpg;maxHeight=640;maxWidth=550"
+        }
+    },
+    {
+        "model": "core.product",
+        "pk": 10,
+        "fields": {
+            "name": "Gateron Yellow Switches",
+            "price": 70.0,
+            "stock": 5,
+            "image": "https://m.media-amazon.com/images/I/61lzZj+HXPL._AC_SY450_.jpg"
+        }
+    },
+    {
+        "model": "core.product",
+        "pk": 11,
+        "fields": {
+            "name": "Wood Keycaps",
+            "price": 200.0,
+            "stock": 4,
+            "image": "https://ae01.alicdn.com/kf/H00d82bfe017f40afbc21a20cc1735925t/Solid-Wood-Keycaps-Mechanical-Keyboard-Walnut-Wood-Keycap-Spacebar-R4-R3-R2-R1-Key-WASD-Direction.jpg"
+        }
+    },
+    {
+        "model": "core.product",
+        "pk": 12,
+        "fields": {
+            "name": "Meme Keycaps",
+            "price": 20.0,
+            "stock": 9,
+            "image": "https://ae01.alicdn.com/kf/H66d6e2575f5e4879b7aef9a37b1297eeW/ZOMO-PLUS-MUR-CAT-MEME-ALUMIUM-ARTISAN-KEYCAP-MECHANICAL-KEYBOARD-KEYCAP.jpg"
+        }
+    },
+    {
+        "model": "core.product",
+        "pk": 13,
+        "fields": {
+            "name": "Neko Keycap",
+            "price": 34.0,
+            "stock": 20,
+            "image": "https://www.ubuy.vn/productimg/?image=aHR0cHM6Ly9pNS53YWxtYXJ0aW1hZ2VzLmNvbS9hc3IvMmMwZmI2NDYtNWNhMS00MjM3LWE1MDctNDMzMDJhZGRkYjRhLmQ4MDU1OWZkZmViOTg1NDkxZjEwMzYzNGNlZDRmY2VmLmpwZWc.jpg"
+        }
+    },
+    {
+        "model": "core.product",
+        "pk": 14,
+        "fields": {
+            "name": "ABS Plain Black Keycaps",
+            "price": 66.0,
+            "stock": 12,
+            "image": "https://m.media-amazon.com/images/I/8187oihNyBL._AC_SX679_.jpg"
+        }
+    },
+    {
+        "model": "core.product",
+        "pk": 15,
+        "fields": {
+            "name": "White Gamer Keyboard",
+            "price": 199.0,
+            "stock": 4,
+            "image": "https://images-na.ssl-images-amazon.com/images/I/41ZclFhN8-L.jpg"
+        }
+    },
+    {
+        "model": "core.product",
+        "pk": 16,
+        "fields": {
+            "name": "Pokemon Keycaps",
+            "price": 89.0,
+            "stock": 7,
+            "image": "https://cdn.shopify.com/s/files/1/0520/4466/0912/products/LabordayThumbnail1_720x.jpg?v=1632118857"
+        }
+    },
+    {
+        "model": "core.product",
+        "pk": 17,
+        "fields": {
+            "name": "Mx Black Switches",
+            "price": 79.0,
+            "stock": 9,
+            "image": "https://cdn-reichelt.de/bilder/web/artikel_ws/E500/CHERRY_MX3A-11XA_01.jpg"
+        }
+    }
+]
