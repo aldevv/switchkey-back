@@ -1,11 +1,11 @@
 _type: export
 __export_format: 4
-__export_date: 2022-02-06T15:39:53.829Z
+__export_date: 2022-02-08T05:32:58.150Z
 __export_source: insomnia.desktop.app:v2021.7.2
 resources:
   - _id: req_83eccfc967f043098f93dbc3d567cf49
     parentId: fld_66aa69bba7174b0a920879a436c6077e
-    modified: 1644112053093
+    modified: 1644294360368
     created: 1643986760324
     url: "{{host}}/accounts/login/"
     name: login
@@ -57,7 +57,7 @@ resources:
     _type: workspace
   - _id: req_832aa4a76dc64e00b383a014d968281a
     parentId: fld_66aa69bba7174b0a920879a436c6077e
-    modified: 1643993103457
+    modified: 1644298360371
     created: 1643986760316
     url: "{{host}}/accounts/registration/"
     name: register
@@ -105,18 +105,18 @@ resources:
     settingRebuildPath: true
     settingFollowRedirects: global
     _type: request
-  - _id: req_82c0869c99df48cbb051d51235a38fef
-    parentId: fld_a6bf1ff6fb2840a8acdae021fc32c83e
-    modified: 1644099698290
-    created: 1644095786553
+  - _id: req_cda4310ff70c41c2bcde5881f07996ce
+    parentId: fld_f32fbeecb23b46fb8c02894273535e3d
+    modified: 1644298307188
+    created: 1644287850699
     url: "{{host}}/users/buy/"
-    name: append product
+    name: product
     description: ""
     method: POST
     body:
       mimeType: multipart/form-data
       params:
-        - id: pair_affff8270aaf4dd0a25a936e019c58c7
+        - id: pair_f2a42b114c6b457b8b43e851d2b0e5e0
           name: product
           value: "1"
           description: ""
@@ -124,12 +124,12 @@ resources:
     headers:
       - name: Content-Type
         value: multipart/form-data
-        id: pair_6f9ad0dcc4564492ab6c4612750588d0
+        id: pair_8d9fe28e40554f1d9c3e07994f189baa
     authentication:
       type: bearer
       token: "{% response 'body', 'req_83eccfc967f043098f93dbc3d567cf49',
         'b64::JC5hY2Nlc3NfdG9rZW4=::46b', 'always', 60 %}"
-    metaSortKey: -1644095786553
+    metaSortKey: -1644287850699
     isPrivate: false
     settingStoreCookies: true
     settingSendCookies: true
@@ -138,15 +138,15 @@ resources:
     settingRebuildPath: true
     settingFollowRedirects: global
     _type: request
-  - _id: fld_a6bf1ff6fb2840a8acdae021fc32c83e
+  - _id: fld_f32fbeecb23b46fb8c02894273535e3d
     parentId: fld_f371a45291c04958b06aef3084ec9502
-    modified: 1644095770365
-    created: 1644095770365
-    name: history
+    modified: 1644287846102
+    created: 1644287734947
+    name: 💸buy
     description: ""
     environment: {}
     environmentPropertyOrder: null
-    metaSortKey: -1644095770365
+    metaSortKey: -1644095770415
     _type: request_group
   - _id: fld_f371a45291c04958b06aef3084ec9502
     parentId: wrk_678496b66032465f9cc855a0a5ef2905
@@ -158,9 +158,48 @@ resources:
     environmentPropertyOrder: {}
     metaSortKey: 50
     _type: request_group
+  - _id: req_f0024462687945128d71b0138a0f43fa
+    parentId: fld_a6bf1ff6fb2840a8acdae021fc32c83e
+    modified: 1644298298050
+    created: 1644287918106
+    url: "{{host}}/users/history/"
+    name: list
+    description: ""
+    method: GET
+    body:
+      mimeType: multipart/form-data
+      params: []
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: multipart/form-data
+        id: pair_6f9ad0dcc4564492ab6c4612750588d0
+    authentication:
+      type: bearer
+      token: "{% response 'body', 'req_83eccfc967f043098f93dbc3d567cf49',
+        'b64::JC5hY2Nlc3NfdG9rZW4=::46b', 'always', 60 %}"
+    metaSortKey: -1644095044655
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_a6bf1ff6fb2840a8acdae021fc32c83e
+    parentId: fld_f371a45291c04958b06aef3084ec9502
+    modified: 1644287831805
+    created: 1644095770365
+    name: 🗃️history
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1644095770365
+    _type: request_group
   - _id: req_22420a3bdad84ba18d64026f5b3f31ca
     parentId: fld_f371a45291c04958b06aef3084ec9502
-    modified: 1644097498014
+    modified: 1644298352506
     created: 1643986781619
     url: "{{host}}/users/"
     name: list
@@ -185,9 +224,9 @@ resources:
     _type: request
   - _id: req_ad83587e460740fa869fd3c5f4450251
     parentId: fld_f371a45291c04958b06aef3084ec9502
-    modified: 1644097493541
+    modified: 1644298288324
     created: 1643992494034
-    url: "{{host}}/users/1/"
+    url: "{{host}}/users/3/"
     name: list one
     description: ""
     method: GET
@@ -210,9 +249,9 @@ resources:
     _type: request
   - _id: req_7519f61cc13a40ffa0a9fcc92c79226f
     parentId: fld_f371a45291c04958b06aef3084ec9502
-    modified: 1644097489023
+    modified: 1644298284388
     created: 1643987954163
-    url: "{{host}}/users/4/"
+    url: "{{host}}/users/3/"
     name: update
     description: ""
     method: PATCH
@@ -223,6 +262,16 @@ resources:
           name: first_name
           value: johnny
           description: ""
+        - id: pair_ec2d44dd0b7a4a36b09bab60543969e3
+          name: last_name
+          value: ""
+          description: ""
+          disabled: true
+        - id: pair_a39cf9e15b1d4e7ba96b0e5760e44d17
+          name: email
+          value: ""
+          description: ""
+          disabled: true
     parameters: []
     headers:
       - name: Content-Type
@@ -244,7 +293,7 @@ resources:
     _type: request
   - _id: req_fb24d89c542149f6b3842a9f19ed696c
     parentId: fld_f371a45291c04958b06aef3084ec9502
-    modified: 1644097484836
+    modified: 1644298289885
     created: 1643987847531
     url: "{{host}}/users/3/"
     name: delete
@@ -269,7 +318,7 @@ resources:
     _type: request
   - _id: req_adb1db1a048e4966aab5f3dea7aa12d5
     parentId: fld_2caad39bd5fb4b57861d65e9e6b15fb8
-    modified: 1644112055429
+    modified: 1644298133321
     created: 1643989353492
     url: "{{host}}/products/"
     name: create
@@ -280,19 +329,19 @@ resources:
       params:
         - id: pair_3c714da55b4648dfa2a630635af4070e
           name: name
-          value: taira
+          value: Portable console
           description: ""
         - id: pair_42cc6ddee90d43db95eaf5382e545e99
           name: price
-          value: "650"
+          value: "200"
           description: ""
         - id: pair_240202e331a446628f242169f68531b7
           name: stock
-          value: "3"
+          value: "5"
           description: ""
         - id: pair_2b1fe5c2612245cda968c924c8d38e64
           name: image
-          value: taira.webp
+          value: https://http2.mlstatic.com/D_NQ_NP_613732-MCO41527022756_042020-O.webp
           description: ""
     parameters: []
     headers:
@@ -324,7 +373,7 @@ resources:
     _type: request_group
   - _id: req_096bdf96a3944ba4a625ce66b314566f
     parentId: fld_2caad39bd5fb4b57861d65e9e6b15fb8
-    modified: 1644161936192
+    modified: 1644298226784
     created: 1644094302707
     url: "{{host}}/products/"
     name: list
@@ -348,9 +397,9 @@ resources:
     _type: request
   - _id: req_8df93f3bc559498ea470b7d1dde3e862
     parentId: fld_2caad39bd5fb4b57861d65e9e6b15fb8
-    modified: 1644097470787
+    modified: 1644298235936
     created: 1644095367739
-    url: "{{host}}/products/1/"
+    url: "{{host}}/products/17/"
     name: list one
     description: ""
     method: GET
@@ -372,9 +421,9 @@ resources:
     _type: request
   - _id: req_41d30a299f644f3fad95e6afb26f5191
     parentId: fld_2caad39bd5fb4b57861d65e9e6b15fb8
-    modified: 1644161955456
+    modified: 1644298217016
     created: 1644095398508
-    url: "{{host}}/products/2/"
+    url: "{{host}}/products/18/"
     name: update
     description: ""
     method: PATCH
@@ -383,9 +432,9 @@ resources:
       params:
         - id: pair_3c714da55b4648dfa2a630635af4070e
           name: name
-          value: taira
+          value: Portable keyboard
           description: ""
-          disabled: true
+          disabled: false
         - id: pair_42cc6ddee90d43db95eaf5382e545e99
           name: price
           value: "0"
@@ -398,8 +447,9 @@ resources:
           disabled: true
         - id: pair_2b1fe5c2612245cda968c924c8d38e64
           name: image
-          value: taira.webp
+          value: https://http2.mlstatic.com/D_NQ_NP_613732-MCO41527022756_042020-O.webp
           description: ""
+          disabled: true
     parameters: []
     headers:
       - name: Content-Type
@@ -420,9 +470,9 @@ resources:
     _type: request
   - _id: req_1426733d281c4c48b96d470fb868bd68
     parentId: fld_2caad39bd5fb4b57861d65e9e6b15fb8
-    modified: 1644097479823
+    modified: 1644298221841
     created: 1644095312900
-    url: "{{host}}/products/1/"
+    url: "{{host}}/products/18/"
     name: delete
     description: ""
     method: DELETE

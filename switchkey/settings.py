@@ -58,6 +58,7 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 REST_USE_JWT = True
 REST_SESSION_LOGIN = False
 LOCAL_FILE_DIR = os.path.join(BASE_DIR, "media/images")
+ACCOUNT_LOGOUT_ON_GET = True
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": ("dj_rest_auth.jwt_auth.JWTCookieAuthentication",)
 }
