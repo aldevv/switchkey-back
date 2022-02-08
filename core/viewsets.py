@@ -24,6 +24,13 @@ class UserViewSet(
     serializer_class = UserSerializer
     permission_classes = [IsAuthenticated]
 
+    def get_permissions(self):
+        return (
+            [IsAuthenticated(), IsAdminUser()]
+            if self.action in ["list"]
+            else super().get_permissions()
+        )
+
     @action(detail=False, methods=["get"])
     def id(self, request):
         if request.user.is_authenticated:
