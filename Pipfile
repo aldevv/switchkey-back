@@ -12,6 +12,7 @@ typing-extensions = "*"
 django-cors-headers = "*"
 dj-rest-auth = {extras = ["with_social"], version = "*"}
 djangorestframework-simplejwt = "*"
+gunicorn = "*"
 
 [dev-packages]
 django-stubs = "*"
