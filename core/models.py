@@ -14,7 +14,7 @@ class Product(models.Model):
     name = models.CharField(max_length=300)
     price = models.FloatField()
     stock = models.IntegerField()
-    image = models.FilePathField(path=settings.LOCAL_FILE_DIR)
+    image = models.CharField(max_length=400)
 
 
 class BuyHistory(models.Model):
