@@ -1,19 +1,11 @@
 # installation
 
-`do pipenv install in the root of the project`
+`pipenv install`
 
-the script for running the endpoints needs a user to exist, so do the following:
+load database with basic fixtures
 
-create a user using `python manage.py createsuperuser`.
+`python manage.py migrate && python manage.py loaddata core/fixtures/{users.products}.json`.
 
 then do the following command to run the server:
 
 `python manage.py runserver`
-
-
-because of time constraints, the script for running the endpoints is not fully functional
-so i added a postman file to run the endpoints
-
-
-
-
