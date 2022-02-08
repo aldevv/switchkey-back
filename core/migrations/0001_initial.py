@@ -128,7 +128,7 @@ class Migration(migrations.Migration):
                         verbose_name="ID",
                     ),
                 ),
-                ("name", models.CharField(max_length=100)),
+                ("name", models.CharField(max_length=300)),
                 ("price", models.FloatField()),
                 ("stock", models.IntegerField()),
                 (

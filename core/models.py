@@ -11,7 +11,7 @@ class User(AbstractUser):
 
 
 class Product(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=300)
     price = models.FloatField()
     stock = models.IntegerField()
     image = models.FilePathField(path=settings.LOCAL_FILE_DIR)
