@@ -131,12 +131,7 @@ class Migration(migrations.Migration):
                 ("name", models.CharField(max_length=100)),
                 ("price", models.FloatField()),
                 ("stock", models.IntegerField()),
-                (
-                    "image",
-                    models.FilePathField(
-                        path="/home/kanon/master/projects/main/switchkey-back/media/images"
-                    ),
-                ),
+                ("image", models.CharField(max_length=400)),
             ],
         ),
         migrations.CreateModel(
